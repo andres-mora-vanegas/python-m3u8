@@ -20,3 +20,7 @@ ffmpeg -i xxxx.ts -acodec copy -vcodec copy xxx.mp4
 ```
 
 - Once is converted the video is ready to view.
+
+## using python with selenim in app.py
+
+There is an example of how use selenium with chrome driver to open page and made something

@@ -10,20 +10,22 @@ import time
 import os
 
 
-# profile = webdriver.FirefoxProfile(os.path.expanduser(r"C:\Users\Andres\AppData\Roaming\Mozilla\Firefox\Profiles\rew5lhld.default-release"))
+# profile = webdriver.FirefoxProfile(os.path.expanduser(r"C:\Users\someuser\AppData\Roaming\Mozilla\Firefox\Profiles\rew5lhld.default-release"))
 
 # options = webdriver.FirefoxOptions()
 # options.profile = profile
 options = Options()
-options.add_argument(r"--user-data-dir=C:\Users\Andres\AppData\Local\Google\Chrome\User Data\Default")
-options.add_argument(r"--load-extension=C:\Users\Andres\AppData\Local\Google\Chrome\User Data\Default\Extensions\bpconcjcammlapcogcnnelfmaeghhagj\9.9.8.9982_0")
-options.add_argument(r"--load-extension=C:\Users\Andres\AppData\Local\Google\Chrome\User Data\Default\Extensions\gighmmpiobklfepjocnamgkkbiglidom\5.4.1_0")
+#if need to load defaul user profile
+options.add_argument(r"--user-data-dir=C:\Users\someuser\AppData\Local\Google\Chrome\User Data\Default")
+#if need to load extension in chrome
+options.add_argument(r"--load-extension=C:\Users\someuser\AppData\Local\Google\Chrome\User Data\Default\Extensions\bpconcjcammlapcogcnnelfmaeghhagj\9.9.8.9982_0")
+options.add_argument(r"--load-extension=C:\Users\someuser\AppData\Local\Google\Chrome\User Data\Default\Extensions\gighmmpiobklfepjocnamgkkbiglidom\5.4.1_0")
 
 # Configura el driver de Chrome
 driver = webdriver.Chrome(options=options)
 #  .Firefox(options=options)
 # Abre la página web
-driver.get("https://www.canalrcn.com/francisco-el-matematico-t1/capitulos/francisco-el-matematico-t1-capitulo-179-jonathan-david-no-puede-controlar-sus-sentimientos")
+driver.get("https://www.example.com")
 
 # Espera a que se cargue la página
 wait = WebDriverWait(driver, 20)
